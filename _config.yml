@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 permalink: /:title
 
 # Sidebar ad
@@ -52,6 +51,3 @@ social_links:
     url: https://twitter.com/SmallBizzWorks
   - service: facebook-official
     url: https://www.facebook.com/Small-Bizz-Works-297967847315539/
-=======
-theme: jekyll-theme-minimal
->>>>>>> origin/master
