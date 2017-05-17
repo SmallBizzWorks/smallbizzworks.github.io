@@ -1,0 +1,24 @@
+---
+layout: blog-default
+---
+
+<div class="container-fluid{% if page.image %} post-image{% endif %}" {% if page.image %}style="background: url(/images/posts/{{ page.image }}) 50% 50% fixed; background-size: cover;"{% endif %} id="blog">
+  <div id="banner-color-overlay"></div>
+  <div class="banner-text text-xs-left">
+    <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+    <p class="post-meta text-grey-light">
+      <span class="card-author"><author>by <strong>{{ page.author }}</strong> | Posted: <em>{{ page.date | date: "%b %-d, %Y" }}</em></author></span>
+    </p>
+  </div>
+</div> <!-- /.container-full -->
+
+<section id="post-body">
+  <div class="container">
+    <article class="post clearfix" itemscope itemtype="http://schema.org/BlogPosting">
+
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+
+    </article>
+</section>

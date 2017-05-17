@@ -1,0 +1,44 @@
+section {
+  &#subscribe {
+    background: $color-blue;
+    color: $color-white;
+    margin-top: 4em !important;
+    text-align: center;
+    @include slanted(50px, $color-blue);
+    .container {
+      h2 {
+        color: $color-white;
+        font-size: 2em;
+        font-weight: 100;
+      }
+      span {
+        font-family: 'Caveat', cursive;
+        font-size: 200%;
+        font-style: italic;
+        white-space: nowrap;
+        display: block;
+      }
+      a {
+        color: $color-white;
+        &:hover {
+          color: darken($color-white, 35%);
+        }
+      }
+      & > a {
+        color: $color-white !important;
+        &:hover {
+          color: darken($color-white, 15%);
+        }
+      }
+      @include desktop {
+        width: 75%;
+      }
+      @include tablet {
+        width: 75%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+#ritter-tab {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
+  ul {
+    background: darken($color-blue, 15%);
+    li {
+      border-left: 1px solid $color-blue;
+      border-bottom: 1px solid transparent;
+      margin-right: -5px;
+      padding: 0;
+      @include transition(all,.3s);
+      @media (max-width: 991px) {border-left: none;}
+      &:hover {border-bottom: 1px solid $color-blue;}
+      a {
+        color: $color-white;
+        display: inline-block;
+        padding: .5em 2em;
+        text-decoration: none;
+        @include transition(all,.3s);
+        &:after {
+          font-family: "Fontawesome";
+          color: lighten($color-blue, 30%);
+          content: "\f08e";
+          padding-left: 0.3em;
+        }
+      }
+    }
+  }
+}
+
+#ritter-tab {
+  font-size: 80%;
+  a {font-size: 80%;}
+}
+
+nav {
+  margin-top: 0;
+  @include transition(all, 0.3s);
+}
+.shift {
+  margin-top: 1.5em;
+}
+
+// newest blog entry
+.trending {
+  color: $grey;
+  font-size: 90%;
+  padding-top: 0.5em;
+  position: absolute;
+  top: 0;
+  right: 180px;
+  z-index: 1200;
+  a {
+    font-size: inherit;
+  }
+}

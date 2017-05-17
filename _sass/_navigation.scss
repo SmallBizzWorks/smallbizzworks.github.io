@@ -1,0 +1,171 @@
+
+// nav
+header {
+  @include largetablet {
+  }
+  .navbar-toggle,
+  .navbar-toggler {
+    border: transparent;
+    .navbar a {
+      border-bottom: 1px solid transparent !important;
+      &:hover {border-bottom: none;}
+    }
+  }
+  .navbar-inverse {
+    border-color: transparent;
+    z-index: 1060;
+    .navbar-toggle,
+    .navbar-toggler {
+      border-color: transparent;
+      &:hover {
+        background: none;
+        border-color: transparent;
+      }
+    }
+    //.navbar-toggler { float: right;}
+    .navbar-nav>li {
+      float: left;
+      @include mobile {
+        float: none;
+        display: block;
+        width: auto;
+      }
+      @include tablet {
+        float: none;
+        display: block;
+        width: auto;
+      }
+    }
+
+    .navbar-nav > li.ritter-tab-menu{
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        color: #fff;
+    }
+    .navbar-light .navbar-toggler,
+    .navbar-toggler {
+      border-color: rgba(0,0,0,.1);
+      float: right;
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-toggler,
+    .navbar-toggler {
+      color: #fff !important;
+      &:focus {
+        color: transparent;
+      }
+      &:active {
+        border-color: transparent;
+      }
+    }
+    header .navbar a, header .dropdown-menu a {
+        background-color: none;
+        border-bottom: 1px solid transparent;
+        color: $color-blue;
+        @include transition(all, .3s);
+    }
+    .nav>li>a {
+      border-bottom: 0px solid transparent;
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+    }
+    .navbar-nav> .active>a {
+      background: none;
+      text-decoration: none;
+      &:visited,
+      &:active,
+      &:hover,
+      &:focus {
+        background: none;
+      }
+    }
+  }
+  .navbar .container {
+    @include large {
+      width: 85%;
+    }
+  }
+  .navbar,
+  .dropdown-menu {
+    background: rgba($color-grey, .55);
+    color: $color-white;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    padding: 1em 0;
+    a {
+      background-color: none;
+      border-bottom: 1px solid transparent;
+      color: $color-white;
+      @include transition(all,.3s);
+      &.active,
+      &:active,
+      &:hover {
+        border-bottom: 2px solid $color-white;
+      }
+    }
+    .navbar-brand {
+      img {
+        height: 90px;
+      }
+      &:hover {
+        border: none;
+      }
+    }
+    .dropdown-menu {
+      .active > * {background-color: transparent;}
+      .divider {
+      @include opacity(.4,4);
+      }
+      a {
+        text-transform: initial;
+        padding: inherit 2em;
+        .fa {
+          color: darken($color-white, 10%);
+          width: 1.5em;
+          &.fa-cc-visa {margin-left: -0.2em;}
+        }
+      }
+    }
+  }
+
+  .navbar {
+    @include mobile {
+      padding: 0;
+      img {
+        padding-top: .5em;
+        max-height: 75px;
+      }
+    }
+  }
+  // Bootstrap specific
+  .navbar-nav>li>.dropdown-menu {
+    margin-top: 2em;
+    border: none;
+  }
+  .nav .open>a,
+  .nav .open>a:focus,
+  .nav .open>a:hover,
+  .nav .open>a:active {
+    background: none;
+    border-color: $color-white;
+  }
+  .nav {
+    > li {
+      > a {
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          text-decoration: none;
+          border-bottom: 1px solid $color-white;
+        }
+      }
+    }
+  }
+}

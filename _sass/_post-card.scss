@@ -1,0 +1,155 @@
+#related-content {
+.card-row div > a.thumbs {
+    @include desktop {
+      height: auto;
+      width: 100%;
+      max-height: 320px;
+      overflow: hidden;
+
+      &:before {
+        content:" ";
+        background-color: rgba($color-blue, 0) !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+     }
+     @include large {
+       height: auto;
+       width: 100%;
+       max-height: 320px;
+       overflow: hidden;
+     }
+    }
+    @include tablet {
+      height: auto;
+      width: 100%;
+    }
+    @include mobile {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+#related-content {
+  .card-row img {
+    @include desktop {
+      width: 100% !important;
+      height: auto;
+      max-height: auto !important;
+      max-width: 100% !important;
+    }
+  }
+}
+
+article {
+  @include large {
+    height: 600px;
+  }
+  @include desktop {
+    height: 600px;
+  }
+  @include tablet {
+    height: 500px;
+  }
+  @include mobile {
+    height: auto;
+  }
+}
+
+.card {
+  &-row {
+    padding: 2em 0 2em 0;
+    &:hover {
+      @include transition(all, 0.3s);
+      a:hover{
+        color: $color-green!important;
+        @include transition(all, 0.3s);
+      }
+      h2 {
+        color: $color-green !important;
+        @include transition(all, 0.3s);
+      }
+    }
+
+    img {
+      @include transition(all, 0.3s);
+      max-height: 100%;
+    }
+    img {
+        display: inline-block;
+        position: relative;
+    }
+    div > .thumbs {
+       display: inline-block;
+       @include bg-size(cover);
+       position: relative;
+       z-index: 1;
+       overflow: hidden;
+       width:100%;
+       max-height: 264px;
+       &:before{
+         content:" ";
+         background-color: rgba($color-blue, 0.2);
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         z-index: 1;
+      }
+    }
+    div > a.post-title{
+      background:none;
+      &:before{
+        background:none;
+      }
+    }
+    .btn {
+      border-bottom: 3px solid $bootstrap-warning;
+      @include transition(all, 0.3s);
+    }
+
+    .read-more {
+      @include transition(all, 0.3s);
+      @include opacity(0, 0);
+      display: block;
+      white-space: nowrap;
+      margin-top: 1em;
+    }
+
+    &:hover .read-more {
+      @include transition(all, 0.3s);
+      @include opacity(0.8, 8);
+    }
+
+    a:focus.post-title,
+    a:hover.post-title {
+      text-decoration: none;
+      background: none !important;
+    }
+  }
+  &-author {
+    color: $grey;
+    display: block;
+    margin-bottom: 1em;
+    a {
+      border-bottom: 1px solid transparent;
+      color: $color-green;
+      text-decoration: none;
+      @include transition(all, 0.3s);
+      &:hover {
+        border-color: $color-green;
+      }
+    }
+  }
+}
+.post-tag{
+      font-family: $font--family;
+      font-weight: 300;
+      text-transform: uppercase;
+      color:$color-green;
+      padding-right: 6px;
+}

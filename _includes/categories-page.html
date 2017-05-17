@@ -1,0 +1,17 @@
+{% for post in site.categories[page.category] %}
+<article>
+  <div class="row card-row">
+    <div>
+      <a class="thumbs" href="{{ post.url | prepend: site.baseurl }}">
+      {% if post.image %}
+      <img class="img-fluid" src="/images/posts/{{post.image}}" alt="{{ post.title }}" >
+      {% else %}
+      <img class="img-fluid" src="/images/agent-in-office.jpg" alt="{{ post.title }}" >
+      {% endif%}
+    </a>
+      <a class="post-title" href="{{ post.url | prepend: site.baseurl }}"><h2 itemprop="name">{{ post.title }}</h2></a>
+      <span class="card-category"><author>by <strong>{{ post.author }}</strong> | Posted: <em>{{ post.date | date: "%b %-d, %Y" }}</em></author></span>
+    </div>
+  </div>
+</article>
+{% endfor %}

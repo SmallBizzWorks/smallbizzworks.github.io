@@ -1,0 +1,47 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %} {% for post in site.posts %}{% if post.tags contains 'featured' %}{{ post.title }} {% endif %} {% endfor %} {% endif %} | {{ site.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.headline }} {{ site.headline2 }}{% endif %}">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{site.twitter_username}}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ site.url }}/images/posts/{{page.image}}">
+  {% else %}
+  <meta name="twitter:image" content="{{ "/images/posts/sbw-think-big-shop-small.jpg" | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}/images/posts/{{page.image }}">
+  {% else %}
+  <meta property="og:image" content="{{ "/images/posts/sbw-think-big-shop-small.jpg" | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Social: Google+ / Schema.org  -->
+  <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta itemprop="image" content="{{ "/images/posts/sbw-think-big-shop-small.jpg" | prepend: site.baseurl | prepend: site.url }}"/>
+
+  <!-- Fonts: Google and Font Awesome -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800|Roboto:100,300,700|Caveat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.min.css" integrity="sha256-qH1KTUBYPDUIfmrwJG9+VBVt71g38U7yVR2J+5wTMPo=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha256-mIfhv/h3MLq3WSiSlduuZO3saRNzzuf1LK8w3z3l3JY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% include favicon.html %}
+
+</head>

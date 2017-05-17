@@ -1,0 +1,12 @@
+.nav .fa-search {
+  cursor: pointer;
+  margin-top: .7em;
+  margin-left: 1em;
+}
+
+.modal.search-modal {
+  background: rgba($color-white, 0.97);
+  button.close {
+    color: $color-blue;
+  }
+}

@@ -1,0 +1,58 @@
+#contact-us,
+#subscribe-form,
+#sign-up {
+  h1, h2, h3, h4, h5, p, ul, li, a, strong {color: $color-white;}
+  strong { font-weight: 600; }
+  h2 { font-size: 40px; }
+}
+
+#sign-up {
+  .form-control:first-child {
+    padding: .5rem .75rem .4rem;
+  }
+}
+
+.zendesk-message-success,
+.zendesk-message-failure {
+  display: none;
+  h1, h2 {
+    color: $color-white;
+    font-size: 40px;
+  }
+}
+
+.subscribe-message-success,
+.subscribe-message-failure {
+  padding: 4em 0;
+  h1, h2 {
+    color: $color-white;
+    font-size: 40px;
+  }
+  h3, h4 {
+    color: $color-white;
+    font-size: 20px;
+  }
+  p {
+    color: $color-white;
+    font-size: 18px;
+  }
+}
+
+#spinner {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .fa {
+        position: fixed;
+        color: $color-white;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        z-index: 5000;
+        display: block;
+        font-size: 3em;
+    }
+}

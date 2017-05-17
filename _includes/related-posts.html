@@ -1,0 +1,133 @@
+{% comment %}---> the maximum number of related to posts
+                  to be printed {% endcomment %}
+
+{% assign maxRelated = 6 %}
+
+{% comment %}---> the minimum number of common tags
+                  to have for a post to be considered
+                  as a related post {% endcomment %}
+
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}
+
+<section id="related-content" class="related">
+  <div class="container">
+    <h4 class="gold">You May Also Like</h4>
+    <div class="primary">
+
+      {% for post in site.posts %}
+
+        {% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+
+        {% for tag in post.tags %}
+          {% comment %}---> Only compare if post is
+                            not same as current page {% endcomment %}
+          {% if post.url != page.url %}
+            {% if page.tags contains tag %}
+              {% assign sameTagCount = sameTagCount | plus: 1 %}
+              {% capture tagmarkup %} <span class="label label-default">{{ tag }}</span> {% endcapture %}
+              {% assign commonTags = commonTags | append: tagmarkup %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sameTagCount >= minCommonTags %}
+        {% unless post.tag contains 'infographic' %}
+        <article>
+          <div class="row card-row">
+            <div class="col-sm-12">
+              <a class="thumbs" href="{{ post.url | prepend: site.baseurl }}">
+              {% if post.image %}
+              <img class="img-fluid" src="/images/posts/{{post.image}}" alt="{{ post.title }}" >
+              {% else %}
+              <img class="img-fluid" src="/images/agent-in-office.jpg" alt="{{ post.title }}" >
+              {% endif%}
+            </a>
+              <a class="post-title" href="{{ post.url | prepend: site.baseurl }}"><h2 itemprop="name">{{ post.title }}</h2></a>
+              <span class="card-category"><author>by <strong>{{ post.author }}</strong> | Posted: <em>{{ post.date | date: "%b %-d, %Y" }}</em></author></span>
+          </div>
+        </article>
+
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+          {% if maxRelatedCounter >= maxRelated %}
+            {% break %}
+          {% endif %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}<!-- /.card-row -->
+      </div>
+
+      {% if site.data.ads %}
+      <div class="ad">
+        {% assign hours= site.time | date: "%H" | plus:100 %}
+        {% assign random = page.title.size | plus: hours | modulo: site.data.ads.size %}
+        <div class="row ad-spot">
+          <div>
+                  <a class="thumbs" href="{{site.data.ads[random].link}}" {% if site.data.ads[random].new-tab == "on" %}target="_blank"{% else %}target=""{% endif %} rel="nofollow">
+                    <img class="img-fluid" src="/images/icons/ads/{{site.data.ads[random].image}}">
+                  </a>
+                  <a class="post-title" href="{{site.data.ads[random].link}}" {% if site.data.ads[random].newtab == "on" %}target="_blank"{% else %}target=""{% endif %}><h2 itemprop="name">{{ site.data.ads[random].title }}</h2></a>
+                  <p>{{ site.data.ads[random].text | strip_html | truncatewords:20 }}</p>
+          </div>
+        </div>
+      </div><!-- .ads -->
+      {% endif %}
+
+    </div>
+</section>
+
+{% if maxRelatedCounter < 5 %}
+<style>
+  .related {
+    display: none;
+  }
+</style>
+
+<section id="related-content" class="recent">
+  <div class="container">
+    <h4 class="gold">Most Recent</h4>
+    <div class="primary">
+
+      {% for post in site.posts limit:7 %}
+      {% unless post.tag contains 'ad' %}
+      {% unless post.tag contains 'infographic' %}
+        <article>
+          <div class="row card-row">
+            <div class="col-sm-12">
+              <a class="thumbs" href="{{ post.url | prepend: site.baseurl }}">
+              {% if post.image %}
+              <img class="img-fluid" src="/images/posts/{{post.image}}" alt="{{ post.title }}" >
+              {% else %}
+              <img class="img-fluid" src="/images/agent-in-office.jpg" alt="{{ post.title }}" >
+              {% endif%}
+            </a>
+              <a class="post-title" href="{{ post.url | prepend: site.baseurl }}"><h2 itemprop="name">{{ post.title }}</h2></a>
+              <span class="card-category"><author>by <strong>{{ post.author }}</strong> | Posted: <em>{{ post.date | date: "%b %-d, %Y" }}</em></author></span>
+            </div>
+          </div>
+        </article>
+        {% endunless %}
+        {% endunless %}
+        {% endfor %}<!-- / you may also like -->
+      </div>
+
+      {% if site.data.ads %}
+      <div class="ad">
+        {% assign hours= site.time | date: "%H" | plus:100 %}
+        {% assign random = page.title.size | plus: hours | modulo: site.data.ads.size %}
+        <div class="row ad-spot">
+          <div>
+                  <a class="thumbs" href="{{site.data.ads[random].link}}" {% if site.data.ads[random].new-tab == "on" %}target="_blank"{% else %}target=""{% endif %} rel="nofollow">
+                    <img class="img-fluid" src="/images/icons/ads/{{site.data.ads[random].image}}">
+                  </a>
+                  <a class="post-title" href="{{site.data.ads[random].link}}" {% if site.data.ads[random].newtab == "on" %}target="_blank"{% else %}target=""{% endif %}><h2 itemprop="name">{{ site.data.ads[random].title }}</h2></a>
+                  <p>{{ site.data.ads[random].text | strip_html | truncatewords:20 }}</p>
+          </div>
+        </div>
+      </div><!-- .ads -->
+      {% endif %}
+
+  </div>
+</section>
+{% endif%}

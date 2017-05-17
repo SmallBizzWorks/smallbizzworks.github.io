@@ -1,0 +1,99 @@
+// Intro div
+#aep {
+  height: 78vh;
+  @include bg-size(cover);
+}
+#banner-color-overlay {
+  background-color: $color-Darkgreen;
+  @include opacity(0.4, 4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#blog {
+  .banner-text {
+    font-size: 2.3vh;
+    padding: 6em 8em 2em;
+    @include tablet {
+      padding: 2em 5em;
+    }
+    @include mobile {
+      padding: 2em 2em;
+    }
+    h1 {
+      font-size: 6vh;
+    }
+    author {
+      font-size: 2.8vh;
+    }
+  }
+}
+
+#aep {
+  .banner-text {
+    font-size: 2.3vh;
+    padding: 4em 8em 2em;
+      @include tablet {
+        padding: 2em 5em;
+      }
+      @include mobile {
+        padding: 2em 2em;
+      }
+    h1 {
+      font-size: 6vh;
+    }
+    author {
+      font-size: 2.8vh;
+    }
+  }
+}
+
+#aep,
+#blog {
+  .banner-text {
+    color: $color-white;
+    width: 80%;
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    span {
+      color: $grey-lightest;
+      font-weight: 400;
+      text-transform: none;
+    }
+    @include mobile {
+      padding-top: 2em;
+      padding-bottom: .5em;
+    }
+    author {
+        margin: 1em 0 1em;
+        display: inline-block;
+        opacity: .5;
+    }
+    @extend %vertical-center;
+    a:hover{ text-decoration: none; }
+    a:hover h1 { color: $grey-light;}
+    h1 {
+      color: $color-white;
+      @include mobile {
+        font-size: 180%;
+      }
+      /*@media (max-width: 765px) {
+        font-size: 180%;
+      }*/
+      small {
+        color: $color-white;
+        display: block;}
+    }
+  }
+}

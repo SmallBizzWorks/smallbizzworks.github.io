@@ -1,0 +1,410 @@
+/// Main style sheet for ASG site
+// main template elements
+body {
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+  & * {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+  h1 {font-size: 2em; color: $color-blue;}
+  h3 {font-size: 1.3em;}
+
+  h1,
+  h3,
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  .card-category { display: inline-block; font-size: 12px; }
+  h1,
+  h2,
+  h3 {line-height: 1.1;}
+  strong {font-weight: 600;}
+  .container-fluid {
+    padding: 0;
+  }
+  :placeholder-shown {
+    font-weight: lighter;
+  }
+  .text-center {
+      color: $grey-light;
+      text-align: center;
+  }
+  .divider {
+    color: $grey-light;
+    margin: 1em auto;
+  }
+  hr {
+    &.half-rule {
+      border: 0;
+      border-top: 1px solid $grey-light;
+      width: 50%;
+      @include opacity(0.4, 4);
+    }
+    &.light {
+      background: $color-blue;
+      height: 1px;
+      margin: 20px auto;
+      width: 65%;
+      @include opacity(0.2, 2);
+    }
+  }
+
+.site-tag {
+  a {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+    font-size: 16px;
+    margin-right: 12px;
+  }
+}
+
+}
+
+.text-grey-light {
+  color: $grey-light;
+  margin-bottom: 1em;
+  text-transform: none;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+#white-paper,
+#in-this-issue,
+#related-content,
+#ad-content,
+#winners,
+#monthly-quiz,
+#disclaimers,
+#post-body,
+#archives {
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: $color-blue;
+
+  }
+  h4.gold {
+    font-family: $font--family;
+    font-weight: 300;
+    font-size: 85%;
+    text-transform: uppercase;
+    color: $color-blue;
+    border-bottom: 1px solid $grey-light;
+    padding: 0 0 .2em 0;
+    margin: 1em 0 1.5em 0;
+    width: auto;
+      &.norule {
+        border-bottom: 0px solid $grey-light;
+        padding: 0 0 .2em 0;
+      }
+  }
+}
+
+#winners,
+#disclaimers,
+#subscribe {
+  .container {
+    padding: 5em 0;
+  }
+}
+
+#white-paper,
+#monthly-quiz,
+#archives {
+  .container {
+    padding-bottom: 1em;
+  }
+}
+
+// Slants
+// No Slants
+
+section {
+  &#aep,
+  &#in-this-issue,
+  &#past-issues,
+  &#post-body,
+  &#ad-content,
+  &#contact {
+    @include noslant(50px);
+  }
+}
+
+#aep {
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.category-body .container {
+    margin-top: 4em !important;
+}
+
+section {
+  &#footer {
+    background: $grey-dark;
+    color: $color-white;
+  }
+
+  &#in-this-issue,
+  &#ad-content,
+  &#post-body,
+  &#past-issues {
+    background: $color-white;
+  }
+}
+
+section {
+  &#footer {
+    @include slanted(50px, $grey-dark);
+  }
+}
+
+section {
+   // bring container above the 'slant'
+   .container {
+     position: relative;
+     z-index: 2;
+   }
+   .container h4.gold {
+         font-family: $font--family;
+         font-weight: 300;
+         font-size: 85%;
+         text-transform: uppercase;
+         color: $color-gold;
+         border-bottom: 1px solid $grey-light;
+         padding: .5em .6em;
+         margin: 1em 0 1.5em 0;
+         width: auto;
+          &.norule {
+            border-bottom: 0px solid $grey-light;
+            padding: 0 0 .2em 0;
+          }
+   }
+ }
+
+
+blockquote {
+  border: none;
+  font-size: 24px;
+  color: $color-gold;
+  margin: 1em 3em 1em;
+  display: inline-block;
+  p {
+    font-size: 24px;
+    &:before {
+      font-family: Fontawesome;
+      font-size: 110%;
+      color: $grey-light;
+      content: "\f10d\0020";
+      margin-left: -1.2em;
+    }
+  }
+}
+
+.formErrorMessages {
+  display: block;
+}
+
+input[type=submit] {
+  background: $color-gold;
+  color: $color-white;
+  float: right;
+  padding: .5em 1em;
+  &:hover {
+    background: darken($color-gold, 15%);
+  }
+}
+
+.checklist {
+  list-style-type: none;
+  margin-left: -2em;
+  line-height: 2em;
+  &:first-child {margin-top: 1em;}
+  &:last-child {margin-bottom: 1em;}
+  &:before {
+    font-family: "Fontawesome";
+    font-size: 110%;
+    content: "\f046";
+    color: lighten($color-blue,40%);
+    padding-right: 1em;
+  }
+}
+
+.category-body{
+  .container {
+    @include desktop {
+      width:90% !important;
+    }
+    @include large {
+      width:90% !important;
+    }
+  }
+}
+
+#related-content {
+  margin: 2em 0;
+  @include desktop {
+    .primary {
+      float: none !important;
+      display: block;
+      width: 100%;
+    }
+  }
+  @include mobile {
+    .primary {
+      max-width: 100% !important;
+      margin: 0 auto;
+    }
+  }
+  @include tablet {
+    .primary {
+      max-width: 100%;
+    }
+  }
+  .ad {
+    border: none !important;
+    max-width: 18%;
+    float: none !important;
+    display: inline-block;
+    margin: 0 0 0 25px;
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+    .ad-spot {
+
+      h2 {
+        font-size: 1em;
+        font-weight: 300;
+        padding: .5em .5em 0;
+        margin: 0 auto;
+      }
+      p {
+        font-size: .8em;
+        padding: .5em .5em 0;
+      }
+      img {
+        @include transition(all, 0.3s);
+        max-height: 100%;
+      }
+      div > .thumbs {
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+         position: relative;
+         z-index: 1;
+
+         &:before {
+           content:" ";
+           background-color: rgba($color-blue, 0);
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 0;
+           bottom: 0;
+           z-index: 1;
+        }
+      }
+      .post-tag {
+        font-size: .8em;
+        padding: .5em .5em 0;
+      }
+    }
+  }
+  .categories {
+    .card-row {
+      @include desktop {
+        float:left;
+        max-width:35%;
+        padding: 0px 1em 1em 1.5em;
+        min-height: 400px;
+          h2 {
+              font-size: 1.3em;
+              font-weight: 300;
+              padding: .5em 0 0;
+              margin: 0 auto;
+            }
+      }
+      @include large {
+        max-width:50%;
+      }
+    }
+  }
+  .card-row {
+
+    padding: 0px 1em 0em 1.5em;
+    min-height: 315px;
+    h2 {
+      font-size: 1em;
+      font-weight: 300;
+      padding: .5em 0 0;
+      margin: 0 auto;
+    }
+
+    @include mobile {
+      padding: 1em 0;
+      min-height: 280px;
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    @include desktop {
+      padding: 0px 0em 0 .5em;
+      min-height: 280px;
+      width: 37%;
+      float: left;
+        h2 {
+          font-size: 1em;
+          font-weight: 300;
+          padding: .5em 0 0;
+          margin: 0 auto;
+        }
+    }
+    @include large {
+      padding: 0px 0em 0 .5em;
+      min-height: 315px;
+      width: 36%;
+        h2 {
+          font-size: 1em;
+          font-weight: 300;
+          padding: .5em 0 0;
+          margin: 0 auto;
+        }
+    }
+
+    &:hover img {
+      background-color: rgba($color-blue, 1);
+      @include transition(all, 0.3s);
+      @include opacity(0.8, 8);
+      @include transform-scale(1.10);
+    }
+
+   div {
+      @include mobile {
+        max-width:100%;
+        width: 100%;
+      }
+      @include large {
+        float:left;
+        max-width:100%;
+        padding: 0 1em 0 1em;
+        min-height: 305px;
+      }
+    }
+  }
+}

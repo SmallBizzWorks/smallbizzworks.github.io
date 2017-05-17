@@ -1,0 +1,15 @@
+{% for post in site.posts %}
+  {% assign counter = 0 %}
+  {% if post.tag contains 'featured' and counter < 1 %}
+  {% assign counter = counter | plus: 1 %}
+  <div class="container-fluid" {% if post.image %} style="background: url(/images/posts/{{ post.image }}) 50% 10% fixed; background-size: cover;" {% endif %} id="aep">
+    <div id="banner-color-overlay"></div>
+    <div class="banner-text">
+      <span>Featured Article</span>
+      <a href="{{ post.url | prepend: site.baseurl }}"><h1>{{ post.title }}</h1></a>
+      <author>by <strong>{{ post.author }}</strong> | Posted: <em>{{ post.date | date: "%b %-d, %Y" }}</em></author><br>
+      {{ post.content | strip_html | truncatewords:30 }}
+      {% endif %}
+    </div>
+    {% endfor %}
+</div> <!-- /.container-full -->

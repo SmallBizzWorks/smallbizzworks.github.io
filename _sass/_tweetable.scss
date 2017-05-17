@@ -1,0 +1,34 @@
+.tweetable {
+  border-bottom: 1px dotted transparent;
+  color: $color-gold;
+  @include transition(all,.2s);
+
+  p {
+    font-size: 24px;
+    display: inline-block;
+    float: left;
+    width: 80%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $twitter;
+    text-decoration: none;
+  }
+  &:after {
+    color: $grey-light;
+    content: "\f081";
+    font-family: "fontawesome";
+    font-size: 180%;
+    float: right;
+    display: inline-block;
+    margin: 1em 0 0;
+    @include transition(color, .5s);
+  }
+  &:hover:after {
+    color: $twitter;
+    content: "\f081";
+    @include transition(color, .5s);
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include tag-manager.html %}
+  {% include header.html %}
+
+  <div class="container-fluid{% if page.image %} post-image{% endif %}" {% if page.image %}style="background: url(/images/posts/{{ page.image }}) 50% 50% fixed; background-size: cover;"{% endif %} id="blog">
+  <div id="bannerColorOverlay"></div>
+    <div class="banner-text text-xs-left">
+      <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+    </div>
+  </div> <!-- /.container-full -->
+
+  <section id="post-body">
+    <div class="container">
+      <div class="col-md-12">
+        {{ content }}
+      </div><!-- /.row -->
+    </div>
+  </section>
+
+  {% include subscribe.html %}
+  {% include footer.html %}
+  {% include contact.html %}
+  {% include script.html %}
+  {% include add-this.html %}
+  {% include viglink.html %}
+
+</body>
+
+</html>

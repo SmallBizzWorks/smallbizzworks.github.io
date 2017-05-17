@@ -1,0 +1,26 @@
+footer {
+  &.container {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    text-align: center;
+    @include desktop {
+      width: 75%;
+    }
+    @include tablet {
+      width: 75%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    a {
+      color: $color-white;
+      &.active,
+      &:active,
+      &:hover {
+        color: $color-white;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,27 @@
+---
+layout: blog-default
+---
+
+<section id="post-body" class="category-body">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <article class="post clearfix" itemscope itemtype="http://schema.org/BlogPosting">
+
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+
+        </article>
+
+        <section id="related-content">
+          <div class="container categories">
+            <h4 class="gold">{{ page.title }}</h4>
+            {% include categories-page.html %}
+          </div>
+        </section>
+
+      </div><!-- /.row -->
+    </div>
+  </div>
+</section>

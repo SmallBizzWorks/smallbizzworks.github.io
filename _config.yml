@@ -1,0 +1,53 @@
+permalink: /:title
+
+# Sidebar ad
+sidebarAd:
+  - banner: /images/posts/sbw-tattoo-guy-register.jpg
+    link: http://SmallBizzWorks.com/blog
+    alt: Advertisment
+
+# Site authors
+# append to list whenever an author is added
+author:
+  - name: BHWeb
+    avatar:
+
+# ------------------------------------------------------
+# Site wide - Do not alter unless you know what you're doing
+# ------------------------------------------------------
+title: Small Bizz Works
+email: brenthack35@gmail.com
+description: A global community of small business owners, entrepreneurs and professionals.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://SmallBizzWorks.com"
+forum_url: "http://SmallBizzWorks.com/blog"
+logo: /images/SBW-LOGO-Color.png
+twitter_username: SmallBizzWorks
+github_username:  SmallBizzWorks
+subscribe_url:
+copyright: Small Bizz Works. All rights reserved.
+address: 440 A W 28th Division Hwy, Lititz, PA 17543
+
+# See into the future
+future: true
+
+gems:
+
+# SASS
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - getruby.cmd
+  - README.md
+
+# Social - Ritter social accounts
+social_links:
+  - service: comment
+    url: http://SmallBizzWorks.com/blog
+  - service: twitter
+    url: https://twitter.com/SmallBizzWorks
+  - service: facebook-official
+    url: https://www.facebook.com/Small-Bizz-Works-297967847315539/

@@ -1,0 +1,19 @@
+form {
+  line-height: 2em;
+  padding-bottom: 2em;
+}
+.fieldLabel {
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+.defaultText {padding-left: .5em;}
+ol {
+  li {line-height: 2em;}
+  ol {
+    list-style-type: lower-alpha;
+    li {
+      padding-left: .5em;
+      input[type="radio"] {margin-right: .5em;}
+    }
+  }
+}

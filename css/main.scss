@@ -1,0 +1,75 @@
+---
+# Main SASS manifest
+---
+// Greyscale
+$grey:          #999;
+$grey-dark:     #333;
+$grey-light:    #ccc;
+$grey-lighter:  #efefef;
+$grey-lightest: #f9f9f9;
+$grey-header:   #eee;
+
+$color-white:   white;
+
+// Theme colors
+$color-Darkgreen: #022707;
+$color-green:     #00a651;
+$color-grey:      #454545;
+$color-blue:      #0067b1;
+$color-blue-rgba: rgba($color-blue, 0.8);
+$color-gold:      #f8961d;
+$color-red:       #e82529;
+
+$bootstrap-green: #5cb85c;
+$bootstrap-warning: #ec971f;
+
+// Social colors
+$twitter:    #00aced;
+$facebook:   #3b5998;
+$googleplus: #dd4b39;
+$pinterest:  #cb2027;
+$linkedin:   #007bb6;
+$youtube:    #bb0000;
+$vimeo:      #aad450;
+$instagram:  #517fa4;
+
+// Fonts
+$font--family: 'Roboto', sans-serif !default;
+
+// Breakpoints
+$tablet-width: 768px;
+$large-tablet-width: 961px;
+$desktop-width: 1024px;
+$mobile-width: 767px;
+$large-width: 1645px;
+
+
+/// Load SASS files
+
+@charset "utf-8";
+
+// Import Font Awesome here
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css");
+
+// Load mixins manifest
+@import "mixins/mixins";
+@import "mixins/extends";
+@import "mixins/slanted";
+@import "mixins/bootstrap-mods";
+
+//Load layout
+@import "layout";
+@import "nav-tab";
+@import "navigation";
+@import "intro-banners";
+@import "footer";
+@import "blog";
+@import "contact";
+@import "forms";
+@import "modals";
+@import "post-card";
+@import "tweetable";
+@import "error-page";
+@import "subscribe";
+@import "video";
+@import "search-modal";

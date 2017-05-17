@@ -1,0 +1,71 @@
+// Contact BS modal changes
+// main modals
+.modal {
+  background: transparentize($color-blue, 0.1);
+  .modal-content {
+    background: none;
+    @include box-shadow(none);
+    border: none;
+  }
+}
+
+.modal-full-screen {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  .modal-content {
+    height: 100%;
+    border-radius: 0;
+    padding: 6em;
+    @include transition(all, .3s);
+    @media (min-width: 1200px) {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .modal-header {border: none;}
+    .btn {border: none;}
+  }
+}
+
+#subscribe-ready {
+  .modal-body {top:50%;}
+}
+
+.modal-error {
+  height: 200px;
+  top: calc(50% - 100px) !important;
+  .modal-content{
+    border-radius: 0;
+    .alert-mc {
+      padding: 15px;
+      h1 {
+        color: tomato;
+        margin: 0;
+      }
+    }
+  }
+}
+button.close {
+  z-index: 4000;
+  color: $color-white;
+  font-weight: normal;
+  @include opacity(1,100);
+  &:hover {
+    color: $color-white;
+  }
+}
+// --- flipping colors
+#contact-us .modal-content,
+#subscribe-form .modal-content {
+  button.close {z-index: 9000;}
+}
+
+// fix for BS4 max-width of 600px
+@media (min-width: 576px) {
+.modal-dialog {
+    max-width: 100%;
+  }
+}

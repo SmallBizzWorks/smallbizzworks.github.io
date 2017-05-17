@@ -1,0 +1,100 @@
+// blog layout
+#blog {
+  height: 60vh;
+  background: url(/images/agent-in-office.jpg) 50% 50% fixed;
+  @include bg-size(cover);
+}
+
+#post-body {
+  .container {
+    @include desktop {
+      float: none;
+      margin: 0 auto;
+      width: 60%;
+    }
+    @include mobile {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+    }
+    @include large {
+      width:55%;
+    }
+  }
+}
+
+.post-image {
+  @include bg-size(cover);
+}
+
+.post-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  h2 {font-size: 36px;}
+  time {color: $color-green;}
+  //@media (max-width: 765px) {
+  @include mobile {
+    h3 {font-weight: 100;}
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.page-nav {
+  padding-bottom: 5em;
+}
+
+.post-sidebar {
+  h3 {color: lighten($color-blue, 20%);}
+}
+
+.article-panel {
+  a {
+    color: $color-green;
+  }
+}
+
+.white-paper {
+  &:before {
+    font-family: "Font awesome";
+    content: "\f0f6";
+  }
+}
+
+// .btn-download added for ease of markdown access
+.btn-download {
+  &:after {
+    content: "\f019";
+    font-family: "fontawesome";
+    padding-left: 0.5em;
+  }
+}
+.btn-success {
+  @include large {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    float: none;
+  }
+  @include desktop {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    float: none;
+  }
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    float: none;
+  }
+  @include mobile {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+  }
+}
