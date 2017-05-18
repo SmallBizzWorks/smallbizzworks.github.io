@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://SmallBizzWorks.com"
 forum_url: "http://SmallBizzWorks.com/blog"
 logo: /images/SBW-LOGO-Color.png
-twitter_username: SmallBizzWorks
+twitter_username: smallbizzworks
 github_username:  SmallBizzWorks
 subscribe_url:
 copyright: Small Bizz Works. All rights reserved.
@@ -49,8 +49,8 @@ exclude:
 # Social - Ritter social accounts
 social_links:
   - service: comment
-    url: http://SmallBizzWorks.com/blog
+    url: mailto:bizz@smallbizzworks.com
   - service: twitter
-    url: https://twitter.com/SmallBizzWorks
+    url: https://twitter.com/smallbizzworks
   - service: facebook-official
     url: https://www.facebook.com/Small-Bizz-Works-297967847315539/
