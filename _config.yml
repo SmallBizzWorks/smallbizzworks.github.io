@@ -31,6 +31,9 @@ address: 440 A W 28th Division Hwy, Lititz, PA 17543
 # See into the future
 future: true
 
+#google-analytics
+tracking-code: UA-99331513-1
+
 gems:
 
 # SASS

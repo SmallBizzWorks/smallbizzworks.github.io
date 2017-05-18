@@ -4,8 +4,7 @@
 {% include head.html %}
 
 <body>
-
-  {% include tag-manager.html %}
+  
   {% include header.html %}
 
   <div class="container-fluid{% if page.image %} post-image{% endif %}" {% if page.image %}style="background: url(/images/posts/{{ page.image }}) 50% 50% fixed; background-size: cover;"{% endif %} id="blog">
