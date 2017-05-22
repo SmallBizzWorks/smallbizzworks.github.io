@@ -15,7 +15,14 @@
               {% unless page.index %}
               <li><a href="{{ site.url }}">Home</a></li>
               {% endunless %}
-              <li><a href="/blog">Blog</a></li>
+              <li class="list-inline-item"><a href="/blog"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+              {% for social in site.social_links %}
+                <li class="list-inline-item">
+                  <a href="{{ social.url }}" title="{{ social.service }}" target="_blank">
+                    <i class="fa fa-{{ social.service }} fa-2x"></i>
+                  </a>
+                </li>
+              {% endfor %}
             </ul>
       </div>
     </div> <!-- /.container -->
