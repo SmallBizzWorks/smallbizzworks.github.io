@@ -2,7 +2,7 @@
   {% assign counter = 0 %}
   {% if post.tag contains 'featured' and counter < 1 %}
   {% assign counter = counter | plus: 1 %}
-  <div class="container-fluid" {% if post.image %} style="background: url(/images/posts/{{ post.image }}) 50% 10% fixed; background-size: cover;" {% endif %} id="aep">
+  <div class="container-fluid home-banner" {% if post.image %} style="background: url(/images/posts/{{ post.image }}) 50% 10% fixed; background-size: cover;" {% endif %} id="sbw">
     <div id="banner-color-overlay"></div>
     <div class="banner-text">
       <span>Featured Article</span>

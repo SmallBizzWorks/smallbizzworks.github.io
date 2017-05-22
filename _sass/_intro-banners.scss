@@ -1,5 +1,5 @@
 // Intro div
-#aep {
+#sbw {
   height: 78vh;
   @include bg-size(cover);
 }
@@ -14,6 +14,8 @@
 }
 
 #blog {
+  @include mobile { background-position-x: 25% !important; }
+
   .banner-text {
     font-size: 2.3vh;
     padding: 6em 8em 2em;
@@ -32,7 +34,9 @@
   }
 }
 
-#aep {
+#sbw{
+  @include mobile { background-position-x: 75% !important; }
+
   .banner-text {
     font-size: 2.3vh;
     padding: 4em 8em 2em;
@@ -51,8 +55,9 @@
   }
 }
 
-#aep,
+#sbw,
 #blog {
+
   .banner-text {
     color: $color-white;
     width: 80%;
