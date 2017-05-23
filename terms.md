@@ -2,6 +2,7 @@
 layout: page
 title: Terms and Privacy
 permalink: /terms-and-privacy
+image: sbw-man-at-desk.jpg
 ---
 
 These terms and conditions outline the rules and regulations for the use of the [Small Bizz Works](http://SmallBizzWorks.com) (SBW), a website administrated by [BHWeb](https://brenthackman.com).

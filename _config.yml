@@ -33,6 +33,7 @@ future: true
 
 #google-analytics
 tracking-code: UA-99331513-1
+google_ad_client: ca-pub-1947952316903944
 
 gems:
 

@@ -4,11 +4,11 @@
 {% include head.html %}
 
 <body>
-  
+
   {% include header.html %}
 
   <div class="container-fluid{% if page.image %} post-image{% endif %}" {% if page.image %}style="background: url(/images/posts/{{ page.image }}) 50% 50% fixed; background-size: cover;"{% endif %} id="blog">
-  <div id="bannerColorOverlay"></div>
+  <div id="banner-color-overlay"></div>
     <div class="banner-text text-xs-left">
       <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
     </div>
