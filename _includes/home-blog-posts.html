@@ -6,7 +6,7 @@
                   not repeating in body {% endcomment %}
 {% unless post.tag contains 'ad' %}
 {% unless post.tag contains 'featured' %}
-<article class="col-lg-6">
+<article class="col-lg-6 medium-cards">
 
   <div class="row card-row">
 
@@ -42,7 +42,7 @@
 
 {% comment %}---> Include Advertisment as 3rd Post {% endcomment %}
 
-<article class="col-lg-6">
+<article class="col-lg-6 ad">
 <div class="row card-row">
   <div class="col-md-12">
     <ul class="list-inline text-xs-center">
@@ -60,7 +60,7 @@
 {% unless post.tag contains 'featured' %}
 {% unless post.tag contains 'ad' %}
 
-<article class="col-lg-6">
+<article class="col-lg-6 medium-cards">
 <div class="row card-row">
 <div class="col-md-12">
   <a class="thumbs" href="{{ post.url | prepend: site.baseurl }}">
@@ -91,7 +91,7 @@
 
 {% comment %}---> Include Advertisment at end {% endcomment %}
 
-<article class="col-lg-6">
+<article class="col-lg-6 ad">
 <div class="row card-row">
   <div class="col-md-12">
     <ul class="list-inline text-xs-center">
@@ -102,11 +102,11 @@
 </div>
 </article>
 
-{% for post in site.posts offset:4 limit:4 %}
+{% for post in site.posts offset:4 limit:5 %}
 {% unless post.tag contains 'featured' %}
 {% unless post.tag contains 'ad' %}
 
-<article class="col-lg-6">
+<article class="col-lg-6 small-cards">
 <div class="row card-row">
 <div class="col-md-6">
   <a class="thumbs" href="{{ post.url | prepend: site.baseurl }}">
