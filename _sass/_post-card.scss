@@ -44,6 +44,8 @@
   }
 }
 
+#in-this-issue {
+
 article.small-cards {
   height: auto;
 }
@@ -53,17 +55,19 @@ article.ad {}
 
 article {
   @include large {
-    height: 600px;
+    height: auto;
   }
   @include desktop {
     height: 600px;
   }
   @include tablet {
-    height: 500px;
+    height: auto;
   }
   @include mobile {
     height: auto;
   }
+}
+
 }
 
 .card {

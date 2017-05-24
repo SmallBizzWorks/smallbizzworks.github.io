@@ -134,3 +134,39 @@
 {% endunless %}
 
 {% endfor %}
+
+{% comment %}---> offset the rest of blog posts,
+                  strip out "featured","ads" and "video" tags {% endcomment %}
+
+{% for post in site.posts offset:9 limit:2 %}
+{% unless post.tag contains 'featured' %}
+{% unless post.tag contains 'ad' %}
+
+<article class="col-lg-6 medium-cards">
+<div class="row card-row">
+<div class="col-md-12">
+  <a class="thumbs" href="{{ post.url | prepend: site.baseurl }}">
+  {% if post.image %}
+  <img class="img-fluid" src="/images/posts/{{post.image}}" alt="{{ post.title }}" >
+  {% else %}
+  <img class="img-fluid" src="/images/" alt="{{ post.title }}" >
+  {% endif%}
+</a>
+</div>
+<div class="col-md-12 cardcontent">
+  <a class="post-title" href="{{ post.url | prepend: site.baseurl }}"><h2 itemprop="name">{{ post.title }}</h2></a>
+  <span class="card-author"><author>by <strong>{{ post.author }}</strong> | Posted: <em>{{ post.date | date: "%b %-d, %Y" }}</em></author></span>
+  <p>
+    <a class="post-tag" href="{{ post.category | prepend: site.baseurl | downcase }}"> {{ post.category }}</a>
+     {{ post.content | strip_html | truncatewords:21 }}
+    <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">
+      Read more <i class="fa fa-arrow-circle-right"></i>
+    </a>
+  </p>
+</div>
+</div>
+</article>
+{% endunless %}
+{% endunless %}
+
+{% endfor %}
