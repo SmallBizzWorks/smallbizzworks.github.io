@@ -15,7 +15,8 @@
               {% unless page.index %}
               <li><a href="{{ site.url }}">Home</a></li>
               {% endunless %}
-              <li class="list-inline-item"><a href="/feed.xml"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" target="_blank"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+              <li class="list-inline-item"><a href="#contact-us" data-toggle="modal" data-target="#contact-us"><i class="fa fa-comment fa-2x" aria-hidden="true"></i></a></li>
               {% for social in site.social_links %}
                 <li class="list-inline-item">
                   <a href="{{ social.url }}" title="{{ social.service }}" target="_blank">

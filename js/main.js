@@ -6,9 +6,6 @@ $(function() {
   if (/#thank-you/i.test(hash))
     $('#thanks').modal('show');
 
-  if (/#signup/i.test(hash))
-    $('#sign-up').modal('show');
-
 });
 
 // remove hash from URL after modal close

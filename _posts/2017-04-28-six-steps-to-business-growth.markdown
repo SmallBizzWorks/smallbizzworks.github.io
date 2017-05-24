@@ -26,6 +26,8 @@ As you get to know your community, you will discover its unique needs and perhap
 ## 3. Offer a high quality product or service.
 Identifying an unmet need in your community gives you a powerful competitive edge in the market. You want to offer such a high quality product that no one will be tempted to start a competing business that can “do it better.” Further, you want your clients to be so excited about your product or service that they eagerly recommend you their friends and associates. I sourced my first products from Australia, which is in industry leader in tension shade sails. By distributing a product that already had a proven track record of quality, I was able to impress clients from the very beginning.
 
+<iframe src="https://rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=indscieletric&banner=1MQ7ZXX4RJCRN4ADDK82&f=ifr&linkID=ce797bcf278e25ac646eb8e9cf7d3c0a&t=360531-20&tracking_id=360531-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none; float:right;" frameborder="0"></iframe>
+
 ## 4. Stay exclusive.
 Once others see how successful your business idea is, they may try to emulate you and steal away business. One way you can avoid this is by becoming the exclusive regional dealer of a particular product. My company is the exclusive U.S. retailer of the Sun Square retractable sail, in addition to selling other shade products. Offering an exclusive product has allowed my company to stand out from the competition for over a decade.
 

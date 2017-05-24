@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "10 Free Tools Your Small Business Should Be Using Today"
+date:   2017-05-23 10:30:00 -0400
+author: BHWeb
+category: Business
+tag:
+- Zoho
+- Wrike
+- Join.Me
+- CyberGhost
+- MailChimp
+- Free Tools
+- Avast
+- Tools
+- Wave
+- Deputy
+- EquityNet
+- HootSuite
+image: tools-for-creating-infographic.jpg
+---
+
+**Software doesn't have to be expensive for small to midsize businesses. To help you celebrate National Small Business Week, here are 20 free tools to get your SMB up and running.**
+
+## 1. Endpoint Protection from Avast
+
+What's the point of growing a business if it can be shut down by viruses or hackers? [Avast's](https://www.avast.com) [endpoint protection](https://www.avast.com/en-us/endpoint-protection) comes in a free and a [premium](https://www.avast.com/en-us/endpoint-protection-plus) version, both of which protect your network well.
+
+If you opt for the free version, keep in mind that you won't have access to proactive controls, a firewall or data shredding. However, you'll still get access to solid malware blocking, security scanning and rescue disk functionality -- all of which will come in handy at some point.
+
+## 2. Project Management from Wrike
+
+[Wrike's](https://www.wrike.com/project-management/?utm_source=pcmag&utm_medium=cpc&utm_campaign=review) project management solution is one of the best on the market regardless of which tier you choose. The free version supports up to five users, an unlimited number of collaborators and 2 GB of free storage. With this plan, you can manage tasks, share files and monitor your group's activities in a real-time feed.
+
+If you need customizations and reporting, you'll have to upgrade to a higher tier. But if you're just getting started and your team is small, the free [project management](https://www.wrike.com/project-management/?utm_source=pcmag&utm_medium=cpc&utm_campaign=review) tool will be perfect for you.
+
+## 3. Video Conferencing from join.me
+
+If you're looking to connect with clients, prospects, and remote workers, you'll need a reliable video conferencing solution to help you get the job done. [Join.me](https://www.join.me/) offers a free plan that lets you invite up to 10 video participants, share screens and supports up to five video feeds.
+
+Join.me isn't the most robust offering on the market, but it's definitely a strong competitor among the free solutions. If you don't have money to spend, and you need the cream of the free crop, try [Join.me](https://www.join.me/).
+
+## 4. Applicant Tracking from Zoho Recruit
+
+Small businesses that don't have job openings often will love [Zoho Recruit](https://www.zoho.com/recruit/?utm_source=pcmag&utm_medium=cpc&utm_campaign=Recruit). This applicant tracking tool gives you access to one recruiter and up to five open positions at once. You'll be able to input, publish and track jobs until you find the right candidate for your company's specific needs.
+
+You'll also be able to send emails to applicants via five free email templates, which will make your life easier if you have to send the same (or similar) messages over and over again.
+
+## 5. Human Resources Management from Deputy
+
+Once you've found the right candidate, you'll need to track his or her progress via a human resources (HR) management tool. [Deputy](https://www.deputy.com/) offers a starter plan that costs just $1 per employee per month. Yes, I know, this isn't free. But at only $1 per month, it's an incredibly solid investment.
+
+[Deputy](https://www.deputy.com/) will allow you to schedule employee shifts, make company announcements and manage tasks, all within one easy-to-use tool. Unfortunately, at this price tier, you won't be able to add timesheets or payroll integration. For that, you'll have to spend an extra $2 per employee per month.
+
+## 6. Accounting from Wave
+
+Your employees definitely want to get paid. So does your landlord and your utilities provider. To keep your books balanced, you can use [Wave](https://www.waveapps.com/). With the free version of [Wave](https://www.waveapps.com/), you'll receive accounting and reports functionality, you'll be able to create and scan invoices and you'll be able to scan receipts directly into the system.
+
+No, this isn't a one-stop shop for all of your bookkeeping needs. But if you keep things simple, you'll be able to get pretty far using this basic service. For things such as payments and automatic integration with direct deposit payroll, you'll have to pay $19 month.
+
+## 7. Business Planning from EquityNet
+
+If your company is still looking to lure investors, [EquityNet](https://www.equitynet.com/) offers a free crowdfunding platform that will help you plan, analyze and share your business plan with investors. You'll create your plan using EquityNet's plan and analysis software, and you'll publish it onto the website and share it with anyone who is willing to read your pitch.
+
+Although this is more of a funding tool than a planning tool, the software is good enough to get you through the initial ideation stages (and, who knows, you might even get lucky and find a deep-pocketed investor).
+
+## 8. Social Media Listening from HootSuite
+
+Most small businesses don't need a mega social listening platform. A free, easy-to-use dashboard that lets you stay up-to-date on what your customers are saying should be enough. Fortunately, [Hootsuite](http://signup.hootsuite.com/) offers a free version of its software that's good enough to do the trick.
+
+With [Hootsuite](http://signup.hootsuite.com/) Free, you'll be able to manage multiple social networks, schedule posts and interact with your followers. You'll also be able to track how many followers you have on each of your social networks and monitor which posts are generating the most clicks. If your business grows, you can move up to one of three premium plans, which give you access to additional profiles, analytics and multiple users.
+
+## 9. Email Marketing from MailChimp
+
+[MailChimp](https://mailchimp.com/) is one of the best and most popular email marketing platforms on the market. Service tiers are priced depending on how many emails you send per month. If your company sends fewer than 12,000 email messages per month to fewer than 2,000 subscribers, you'll absolutely love [MailChimp's](https://mailchimp.com/) Forever Free plan.
+
+This steal of a deal lets you use built-in signup forms to gather subscribers from across the web. You can use MailChimp's drag-and-drop designer and email templates to craft the perfect message. You won't get robust reporting on the Forever Free plan, but you'll be able to check open rates and compare them to the average company in your industry. Not bad for zero dollars.
+
+## 10. Virtual Private Network from CyberGhost
+
+Small businesses that are super concerned about security should look into personal virtual private network (VPN) services. These services hide online activity from snoops and limits who can and can't access network content. Most VPNs are pay-to-play but there are a few services, such as [CyberGhost](http://www.cyberghostvpn.com/), that give you a bit of protection at no cost.
+
+[CyberGhost](http://www.cyberghostvpn.com/) is the best free VPN on the market. It offers reliable connection speeds and excellent network security, plus it works on most modern operating systems (OSes). It's somewhat difficult to configure, especially for really small businesses. And if you need Mac or Linux support, you'll need to upgrade to the paid version. But if you just need something simple, easy and free, [CyberGhost](http://www.cyberghostvpn.com/) is a great tool.

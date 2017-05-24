@@ -17,6 +17,7 @@ author:
 # ------------------------------------------------------
 title: Small Bizz Works
 email: brenthack35@gmail.com
+contact-email: mailto:brenthack35@gmail.com
 description: A local community of small business owners, entrepreneurs and professionals. A place to share ideas and work together to promote small business.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://SmallBizzWorks.com"
@@ -24,7 +25,7 @@ forum_url: "http://SmallBizzWorks.com/blog"
 logo: /images/SBW-LOGO.png
 twitter_username: smallbizzworks
 github_username:  SmallBizzWorks
-subscribe_url:
+subscribe_url: /feed.xml
 copyright: Small Bizz Works. All rights reserved.
 address: 440 A W 28th Division Hwy, Lititz, PA 17543
 
@@ -49,8 +50,6 @@ exclude:
 
 # Social - Ritter social accounts
 social_links:
-  - service: comment
-    url: mailto:bizz@smallbizzworks.com
   - service: twitter
     url: https://twitter.com/smallbizzworks
   - service: facebook-official
