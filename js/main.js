@@ -2,10 +2,6 @@ $(function() {
   var hash = location.hash;
   if (/#contact/i.test(hash))
     $('#contact-us').modal('show');
-
-  if (/#thank-you/i.test(hash))
-    $('#thanks').modal('show');
-
 });
 
 // remove hash from URL after modal close
