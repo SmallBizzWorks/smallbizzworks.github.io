@@ -22,6 +22,8 @@ image: tools-for-creating-infographic.jpg
 
 **Software doesn't have to be expensive for small to midsize businesses. To help you celebrate National Small Business Week, here are 20 free tools to get your SMB up and running.**
 
+{% include google-page-ads.html %}
+
 ## 1. Endpoint Protection from Avast
 
 What's the point of growing a business if it can be shut down by viruses or hackers? [Avast's](https://www.avast.com) [endpoint protection](https://www.avast.com/en-us/endpoint-protection) comes in a free and a [premium](https://www.avast.com/en-us/endpoint-protection-plus) version, both of which protect your network well.

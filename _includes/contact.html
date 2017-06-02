@@ -5,12 +5,14 @@
         <div class="modal-content">
             <div class="modal-header">
             </div>
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                <span class="fa fa-lg fa-times-circle-o"></span>
-              </button>
 
-              <form action="mailto:brenthack35@gmail.com" id="contact" method="post">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <span class="fa fa-lg fa-times-circle-o"></span>
+            </button>
+            
+            <div class="modal-body">
+
+              <form action="http://formspree.io/brenthack35@gmail.com" id="contact" method="post">
                   <h3>Thanks for wanting to contact {{ social.url }} {{ site.title }}!</h3>
                   <p class="lead">We want to know what you're thinking, so let us know.</p>
                   <div class="row">
@@ -41,7 +43,7 @@
               </form>
 
             </div>
-            <!-- <div class="message-success">
+            <div class="message-success">
                 <h1>Thank you, your message/comments have been submitted. We will get back to you soon.</h1>
             </div>
             <div class="message-failure">
@@ -49,7 +51,7 @@
             </div>
             <div id="spinner">
                 <i class="fa fa-spinner fa-pulse"></i>
-            </div> -->
+            </div>
         </div>
     </div>
 </div> <!-- /#contact -->

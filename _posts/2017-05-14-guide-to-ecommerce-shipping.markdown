@@ -26,7 +26,7 @@ To reduce shopping cart abandonment and avoid unhappy customers, retailers must 
 
 Whether you're just starting your business and don't know where to begin with shipping, or you simply want to make your shipping operations more efficient, here's a primer on what retail businesses need to know about the process. [Tackle the biggest challenges for small e-commerce retailers with ease.]
 
-<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=indscieletric&banner=0RASKDGKKQPAEX1AT782&f=ifr&linkID=97608de69215d980e04803cc7c00bd1a&t=360531-20&tracking_id=360531-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;float:right;float:left;margin:1em;" frameborder="0"></iframe>
+{% include google-page-ads.html %}
 
 ## Choosing your vendors
 
