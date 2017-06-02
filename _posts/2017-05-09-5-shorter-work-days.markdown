@@ -24,7 +24,6 @@ The study’s subjects also reported being more energetic and feeling less stres
 
 One U.S. company actually put the concept of a shorter workday into effect, and the results were laudable. The owner of a 10-person company changed everyone’s hours to 8 a.m. to 1 a.m. This effectively raised the hourly rate of each employee with no additional financial outlay. But it also resulted in revenue growth of 40% in one year, and the growth trend is continuing.
 
-{% include google-page-ads.html %}
 
 ## Summer hours
 

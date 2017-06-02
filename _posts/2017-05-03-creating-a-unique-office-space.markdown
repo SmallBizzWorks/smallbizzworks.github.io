@@ -35,7 +35,6 @@ What is the first thing that a client or member of the public will see when they
 
 It should also be noted that creating a unique office has additional benefits over simply being memorable to potential clients. An office that reflects the core values of the business in an interesting manner is one that employees are more likely to enjoy being a part of.
 
-{% include google-page-ads.html %}
 
 Take this even further by making sure your office is not too strictly “work focused.” Yes, meeting deadlines and working efficiently is vital for any business, but doing so at the expense of your workforce is not a sustainable method of operation. Make sure that your office also has a separate and interesting area just for your employees to unwind and enjoy themselves between work, and your employees will demonstrate their gratitude by being further committed to the company mission.
 

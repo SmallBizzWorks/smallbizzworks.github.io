@@ -28,7 +28,6 @@ A small business can go for the gold in more ways than money. They can define ho
   - Greening the workplace. Small businesses can choose how eco-friendly they want to be.
   - Giving back to the community. It’s easy for small businesses to support their communities, through donations, volunteer activities, or participation in local charitable events.
 
-{% include google-page-ads.html %}
 
 ## 3. Flexibility
 
