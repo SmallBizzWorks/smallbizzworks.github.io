@@ -38,7 +38,6 @@ Here are some options for flexible work schedules:
   - Allow schedules to be individually tailored; approval is required from the owner or manager.
   - Paid time off (PTO) policies
 
-{% include google-page-ads.html %}
 
 Currently there is no federal law requiring paid leave for family responsibilities or paid sick leave. However, some states have paid family leave laws: California, New Jersey, New York (effective January 1, 2018), and Rhode Island. These programs are funded by employee contributions (payroll withholding); no employer contributions are required.  And some have paid sick leave programs: California, Connecticut, Massachusetts, Oregon, and Vermont.
 

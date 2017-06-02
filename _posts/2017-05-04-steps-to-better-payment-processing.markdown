@@ -19,7 +19,6 @@ It costs you money to receive payment by credit card, so shop around for a proce
 ## 2. Protect yourself with EMV.
 If you accept credit cards in person and haven’t yet changed from swipe (a credit card with a strip) to dip (a credit card that’s enabled for EMV, which stands for Europay, MasterCard, Visa), you can be liable for fraudulent charges. It’s simple; change to EMV technology. Visa explains that EMV chip technology makes it virtually impossible to counterfeit cards, eliminating in-store fraud…and your liability exposure. There’s a 2015 SBA webinar that explains EMV technology.
 
-{% include google-page-ads.html %}
 
 ## 3. Expand your payment options.
 The more ways in which you accept payment, the wider your customer base can be. In addition to payments by check and credit/debit cards, be sure to have a [PayPal](https://www.paypal.com){:target="_blank"} account. Increasingly this payment option is used by consumers and business customers. Apple Pay is another must-have payment option; it’s favored by many millennials who like to do almost everything with their smartphones.

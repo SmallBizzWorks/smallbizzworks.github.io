@@ -35,7 +35,6 @@ They start their journey staring at the shiny summit of opportunity and freedom,
 
 We have to commit to the journey ahead and embrace the challenge as a part of the process. Because when we go all in with the understanding that there will be setbacks and obstacles, we let the road ahead to refine us rather than tear us down.
 
-{% include google-page-ads.html %}
 
 ## 3. Take a Break
 Finally, when things seem too overwhelming, allow yourself to throw in the towel ― for a day. As entrepreneurs we tend to have endless to do lists and we are so caught up with every detail of our business, that most of us don’t even realize that we’re running on fumes until we have a complete breakdown.
