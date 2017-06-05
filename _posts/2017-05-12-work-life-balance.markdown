@@ -2,7 +2,7 @@
 layout: post
 title:  "Work-life Balance: How Small Business Make it Work"
 date:   2017-05-12 10:30:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - COMPANY BENEFITS

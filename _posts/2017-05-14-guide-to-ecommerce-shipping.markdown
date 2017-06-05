@@ -2,7 +2,7 @@
 layout: post
 title:  "A Small Business Guide to E-Commerce Shipping"
 date:   2017-05-14 10:30:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - Shipping

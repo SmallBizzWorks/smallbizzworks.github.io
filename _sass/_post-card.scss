@@ -47,7 +47,7 @@
 #in-this-issue {
 
 article.small-cards {
-  height: auto;
+  height: 450px;
 }
 article.medium-cards {}
 article.large-cards {}
@@ -105,7 +105,7 @@ article {
        max-height: 264px;
        &:before{
          content:" ";
-         background-color: rgba($color-blue, 0.2);
+         background-color: rgba($color-blue, 0);
          position: absolute;
          left: 0;
          right: 0;

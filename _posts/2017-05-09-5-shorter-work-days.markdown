@@ -2,7 +2,7 @@
 layout: post
 title: "Shorter Work Days to Increase Profits?"
 date: 2017-05-09 14:00:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - BENEFITS OF SHORTER WORK HOURS
