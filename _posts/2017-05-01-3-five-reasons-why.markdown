@@ -2,7 +2,7 @@
 layout: post
 title: "5 Reasons Why It’s Great to be a Small Business"
 date: 2017-05-01 13:30:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - featured

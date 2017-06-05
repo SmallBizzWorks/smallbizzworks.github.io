@@ -2,7 +2,7 @@
 layout: post
 title: "6 Steps to Business Growth through Community Connections"
 date: 2017-04-28 13:30:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - Know Your Community

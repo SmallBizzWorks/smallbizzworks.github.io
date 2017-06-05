@@ -103,7 +103,7 @@
 </div>
 </article>
 
-{% for post in site.posts offset:4 limit:5 %}
+{% for post in site.posts offset:4 limit:4 %}
 {% unless post.tag contains 'featured' %}
 {% unless post.tag contains 'ad' %}
 
@@ -139,7 +139,7 @@
 {% comment %}---> offset the rest of blog posts,
                   strip out "featured","ads" and "video" tags {% endcomment %}
 
-{% for post in site.posts offset:9 limit:2 %}
+{% for post in site.posts offset:8 %}
 {% unless post.tag contains 'featured' %}
 {% unless post.tag contains 'ad' %}
 
@@ -171,3 +171,15 @@
 {% endunless %}
 
 {% endfor %}
+
+<article class="col-lg-12 ad">
+<div class="row card-row">
+  <div class="col-md-12">
+    <ul class="list-inline text-xs-center">
+
+      {% include google-homepage-ad.html %}
+
+    </ul>
+  </div>
+</div>
+</article>

@@ -2,7 +2,7 @@
 layout: post
 title: "Creating a Unique Office Space"
 date: 2017-05-03 13:30:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - Office Space

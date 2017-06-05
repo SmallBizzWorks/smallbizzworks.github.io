@@ -2,7 +2,7 @@
 layout: post
 title: "4 Steps to Better Payment Processing"
 date: 2017-05-04 13:30:00 -0400
-author: BHWeb
+author: SBWorks
 category: Business
 tag:
 - annuities
