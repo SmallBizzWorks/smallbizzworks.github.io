@@ -5,7 +5,6 @@ date: 2017-05-01 13:30:00 -0400
 author: SBWorks
 category: Business
 tag:
-- featured
 - SMALLBUSINESSWEEK
 - ENTREPRENEURS
 - NATIONAL SMALL BUSINESS WEEK
