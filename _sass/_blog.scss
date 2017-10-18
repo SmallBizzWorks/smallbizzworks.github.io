@@ -41,6 +41,22 @@
       line-height: 1.5em;
     }
   }
+
+  img.inline-img-left {
+      float: left;
+      margin: 0 1em 1em 0;
+      border: none;
+      width: 55%;
+      height: auto;
+  }
+  img.inline-img-right {
+      float: right;
+      margin: 0 0 1em 1em;
+      border: none;
+      width: 55%;
+      height: auto;
+  }
+
 }
 
 .page-nav {
